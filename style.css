@@ -1,0 +1,356 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4a3428;
+}
+
+
+
+header {
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+.paw {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.toe {
+    width: 10px;
+    height: 10px;
+    background-color: #8b5a3c;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.toe1 {
+    top: 5px;
+    left: 5px;
+}
+
+.toe2 {
+    top: 0;
+    left: 15px;
+}
+
+.toe3 {
+    top: 5px;
+    left: 25px;
+}
+
+.pad {
+    width: 25px;
+    height: 20px;
+    background-color: #8b5a3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 8px;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3428;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d47b4b;
+    transform: translateY(-3px);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 550px;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5dfc5;
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 500px;
+
+    animation: slideUp 1s ease;
+}
+
+.hero h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #8b5a3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+
+
+.dog {
+    width: 230px;
+    height: 190px;
+    background-color: #c98b5b;
+    border-radius: 50%;
+    position: relative;
+
+    animation: dogAppear 1s ease;
+}
+
+.ear {
+    width: 65px;
+    height: 100px;
+    background-color: #8b5a3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+.left-ear {
+    left: -40px;
+    transform: rotate(-20deg);
+}
+
+.right-ear {
+    right: -40px;
+    transform: rotate(20deg);
+}
+
+.eye {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+}
+
+.left-eye {
+    left: 55px;
+}
+
+.right-eye {
+    right: 55px;
+}
+
+.nose {
+    width: 30px;
+    height: 22px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 105px;
+    left: 100px;
+}
+
+.mouth {
+    width: 35px;
+    height: 15px;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 125px;
+    left: 98px;
+}
+
+
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2,
+.dogs h2,
+.involved h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+
+
+.dogs {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.dog-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dog-card {
+    width: 250px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.dog-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.dog-icon {
+    font-size: 70px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.dog-card:hover .dog-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.dog-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dog-card p {
+    margin-bottom: 20px;
+}
+
+
+button {
+    border: none;
+    padding: 12px 20px;
+    background-color: #8b5a3c;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #d47b4b;
+}
+
+
+.involved {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f5dfc5;
+}
+
+.involved p {
+    margin-bottom: 25px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #4a3428;
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes dogAppear {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
+}
